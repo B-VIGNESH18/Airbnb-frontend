@@ -142,5 +142,5 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-- **GitHub**: [Hemapriya182024](https://github.com/Hemapriya182024)
-- **LinkedIn**: [Hemapriya K](https://www.linkedin.com/in/hemapriya-k-4536a730b/)
+- **GitHub**: [B-vignesh18](https://github.com/B-VIGNESH18)
+- **LinkedIn**: [vignesh B](https://www.linkedin.com/in/vignesh-b-745089235/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
