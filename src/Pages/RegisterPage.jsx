@@ -41,7 +41,7 @@ const RegisterPage = () => {
     }
 
     try {
-      const userDoc = await axios.post('http://localhost:5000/register', {
+      const userDoc = await axios.post('https://airbnb-backend-aaky.onrender.com/register', {
         name,
         email,
         password

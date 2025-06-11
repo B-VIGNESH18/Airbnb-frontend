@@ -11,7 +11,7 @@
 //   const [error, setError] = useState(null);
 
 //   useEffect(() => {
-//     axios.get('http://localhost:5000/api/places', {
+//     axios.get('https://airbnb-backend-aaky.onrender.com/api/places', {
 //       withCredentials: true
 //     })
 //       .then(response => {
@@ -90,7 +90,7 @@
 
 //   useEffect(() => {
 //     axios
-//       .get("http://localhost:5000/api/places", {
+//       .get("https://airbnb-backend-aaky.onrender.com/api/places", {
 //         withCredentials: true,
 //       })
 //       .then((response) => {
@@ -173,7 +173,7 @@
 
 //   useEffect(() => {
 //     axios
-//       .get("http://localhost:5000/api/places", {
+//       .get("https://airbnb-backend-aaky.onrender.com/api/places", {
 //         withCredentials: true,
 //       })
 //       .then((response) => {
@@ -259,7 +259,7 @@ export default function IndexPage() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/places', {
+    axios.get('https://airbnb-backend-aaky.onrender.com/api/places', {
       withCredentials: true
     })
       .then(response => {

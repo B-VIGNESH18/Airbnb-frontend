@@ -60,7 +60,7 @@
 //     try {
 //       const token = localStorage.getItem('token');
 //       const numberOfNights = calculateNumberOfNights();
-//       const response = await axios.post('http://localhost:5000/bookings', {
+//       const response = await axios.post('https://airbnb-backend-aaky.onrender.com/bookings', {
 //         checkIn,
 //         checkOut,
 //         numberOfGuests,
@@ -163,7 +163,7 @@ export default function BookingWidget({ place }) {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/bookings", // ✅ MATCHED your backend (no /api)
+        "https://airbnb-backend-aaky.onrender.com/bookings", // ✅ MATCHED your backend (no /api)
         bookingData,
         {
           headers: {

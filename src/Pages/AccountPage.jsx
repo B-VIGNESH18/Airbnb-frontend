@@ -16,7 +16,7 @@ export default function ProfilePage() {
 
   async function logout() {
     const token = localStorage.getItem("token");
-    await axios.post('http://localhost:5000/logout', {}, { headers: { Authorization: `Bearer ${token}`, }, });
+    await axios.post('https://airbnb-backend-aaky.onrender.com/logout', {}, { headers: { Authorization: `Bearer ${token}`, }, });
     localStorage.removeItem("token");
     alert("Logged out successfully");
     setRedirect('/');

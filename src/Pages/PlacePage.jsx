@@ -22,7 +22,7 @@ export default function PlacePage() {
       return;
     }
     axios
-      .get(`http://localhost:5000/api/places/${id}`)
+      .get(`https://airbnb-backend-aaky.onrender.com/api/places/${id}`)
       .then((response) => {
         setPlace(response.data);
         setLoading(false); // Data loaded

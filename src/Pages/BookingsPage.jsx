@@ -12,7 +12,7 @@ export default function BookingsPage() {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    axios.get('http://localhost:5000/bookings', {
+    axios.get('https://airbnb-backend-aaky.onrender.com/bookings', {
       headers: { Authorization: `Bearer ${token}` } 
     })
       .then(response => {
@@ -28,7 +28,7 @@ export default function BookingsPage() {
   const handleCancelBooking = async (bookingId) => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(` http://localhost:5000/bookings/${bookingId}`, {
+      await axios.delete(` https://airbnb-backend-aaky.onrender.com/bookings/${bookingId}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setBookings(bookings.filter(booking => booking._id !== bookingId));

@@ -13,7 +13,7 @@
 
 //     if (token) {
 //       axios
-//         .get("http://localhost:5000", {
+//         .get("https://airbnb-backend-aaky.onrender.com", {
 //           headers: {
 //             Authorization: `Bearer ${token}`, // Send the token in the Authorization header
 //           },
@@ -62,7 +62,7 @@ export function UserContextProvider({ children }) {
     console.log("Processed token:", token);
 
     axios
-      .get("http://localhost:5000/profile", {
+      .get("https://airbnb-backend-aaky.onrender.com/profile", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

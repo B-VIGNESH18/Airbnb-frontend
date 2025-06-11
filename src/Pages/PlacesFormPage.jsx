@@ -24,7 +24,7 @@ export default function PlacesFormPage() {
 
   useEffect(() => {
     if (!id) return;
-    axios.get(`http://localhost:5000/api/places/${id}`, { withCredentials: true }).then(response => {
+    axios.get(`https://airbnb-backend-aaky.onrender.com/api/places/${id}`, { withCredentials: true }).then(response => {
       const data = response.data;
       setTitle(data.title);
       setAddress(data.address);
@@ -65,12 +65,12 @@ export default function PlacesFormPage() {
     };
     if (id) {
       // update
-      await axios.put('http://localhost:5000/api/places', {
+      await axios.put('https://airbnb-backend-aaky.onrender.com/api/places', {
         id, ...placeData
       });
     } else {
       // create new
-      await axios.post('http://localhost:5000/api/places', placeData);
+      await axios.post('https://airbnb-backend-aaky.onrender.com/api/places', placeData);
     }
     setRedirect(true);
   }

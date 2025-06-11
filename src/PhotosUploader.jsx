@@ -9,7 +9,7 @@
 //   const addPhotoByLink = async (ev) => {
 //     ev.preventDefault();
 //     try {
-//       const { data: filename } = await axios.post('http://localhost:5000/upload-by-link', { link: photoLink });
+//       const { data: filename } = await axios.post('https://airbnb-backend-aaky.onrender.com/upload-by-link', { link: photoLink });
 //       console.log('Photo added by link:', filename); // Log filename
 //       onChange(prev => [...prev, filename]);
 //       setPhotoLink('');
@@ -26,7 +26,7 @@
 //   //     data.append('photos', file);
 //   //   }
 //   //   try {
-//   //     const { data: filenames } = await axios.post(' http://localhost:5000/api/upload', data);
+//   //     const { data: filenames } = await axios.post(' https://airbnb-backend-aaky.onrender.com/api/upload', data);
 //   //     onChange(prev => [...prev, ...filenames]);
 //   //   } catch (error) {
 //   //     console.error('Error uploading photo:', error);
@@ -102,7 +102,7 @@
 //   const addPhotoByLink = async (ev) => {
 //     ev.preventDefault();
 //     try {
-//       const { data: filename } = await axios.post('http://localhost:5000/upload-by-link', { link: photoLink });
+//       const { data: filename } = await axios.post('https://airbnb-backend-aaky.onrender.com/upload-by-link', { link: photoLink });
 //       onChange(prev => [...prev, filename]);
 //       setPhotoLink('');
 //     } catch (error) {
@@ -117,7 +117,7 @@
 //       data.append('photos', file);
 //     }
 //     try {
-//       const { data: filenames } = await axios.post('http://localhost:5000/api/places/upload-images', data, {
+//       const { data: filenames } = await axios.post('https://airbnb-backend-aaky.onrender.com/api/places/upload-images', data, {
 //         headers: { 'Content-Type': 'multipart/form-data' }
 //       });
 //       onChange(prev => [...prev, ...filenames]);
@@ -197,7 +197,7 @@ export default function PhotosUploader({ addedPhotos, onChange }) {
 
     try {
       const { data: filename } = await axios.post(
-        'http://localhost:5000/api/places/upload-link',
+        'https://airbnb-backend-aaky.onrender.com/api/places/upload-link',
         { link: photoLink },
         {
           headers: {
@@ -225,7 +225,7 @@ export default function PhotosUploader({ addedPhotos, onChange }) {
   
     try {
       const { data: filenames } = await axios.post(
-        'http://localhost:5000/api/places/upload-images',
+        'https://airbnb-backend-aaky.onrender.com/api/places/upload-images',
         data,
         {
           headers: {
